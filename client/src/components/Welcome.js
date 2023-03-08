@@ -1,14 +1,25 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+
+import React from "react";
 
 function WelcomePage() {
-  return (
-    <div>
-      <h1>Welcome to my app!</h1>
-      <Link to='/next-page'>
-        <button>Go to next page</button>
-      </Link>
-    </div>
-  );
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        console.log("go navigate");
+        navigate("/navigate");
+    };
+
+    return (
+        <div>
+
+          <h1> Welcome</h1>
+
+            <div onClick={handleClick}>
+                <h3>go to navigate</h3>
+            </div>
+        </div>
+    );
 }
 
 export default WelcomePage;
