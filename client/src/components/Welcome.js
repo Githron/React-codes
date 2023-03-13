@@ -10,6 +10,10 @@ function WelcomePage() {
         navigate("/navigate");
     };
 
+    const handleClick2 = () => {
+        navigate("/music");
+    }
+
     return (
         <div>
 
@@ -17,6 +21,10 @@ function WelcomePage() {
 
             <div onClick={handleClick}>
                 <h3>go to navigate</h3>
+            </div>
+
+            <div onClick={handleClick2} className="music">
+                <h3>music</h3>
             </div>
         </div>
     );
