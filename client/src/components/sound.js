@@ -3,6 +3,7 @@ import soundFile from './quiz-music.mp3';
 
 export const soundObject = new Howl({
   src: [soundFile],
-  autoplay: false,
+  volume: 0.5,
+  autoplay: true,
   once: true,
 });
