@@ -1,10 +1,10 @@
 import { Howl } from "howler";
 import soundFile from "./quiz-music.mp3";
 
-const soundObject = new Howl({
+export const soundObject = new Howl({
   src: [soundFile],
   autoplay: false,
-  loop: true, // Add loop option to make it continuously play
+  loop: true,
 });
 
 export function playSound() {
@@ -13,7 +13,7 @@ export function playSound() {
   }
 }
 
-export function pauseSound() {
+export function stopSound() {
   if (soundObject.playing()) {
     soundObject.stop();
   }
