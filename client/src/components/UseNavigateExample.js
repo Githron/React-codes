@@ -18,6 +18,11 @@ const UseNavigateExample = () => {
         console.log("Div clicked!");
         window.location.href = "https://facebook.com";
       };
+
+      const handleClick4 = () => {
+        console.log("Div clicked!");
+        window.location.href = "/getIp";
+      };
       
       
 
@@ -36,6 +41,10 @@ const UseNavigateExample = () => {
 
             <div onClick={handleClick3}>
                 outside link
+            </div>
+
+            <div onClick={handleClick4}>
+                Get ip
             </div>
 
 

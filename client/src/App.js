@@ -6,6 +6,7 @@ import UseNavigateExample from "./components/UseNavigateExample";
 import ChangeStyle from "./components/changeStyle";
 import Music from "./components/Music";
 import Music2 from "./components/Music2";
+import GetIp from "./components/GetIp";
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
             <Route path="/change-style" element={<ChangeStyle />}></Route>
             <Route path="/music" element={<Music />}></Route>
             <Route path="/music2" element={<Music2 />}></Route>
+            <Route path="/getIp" element={<GetIp />}></Route>
+            
 
         </Routes>
     );
