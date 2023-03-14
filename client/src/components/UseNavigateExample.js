@@ -21,7 +21,7 @@ const UseNavigateExample = () => {
 
       const handleClick4 = () => {
         console.log("Div clicked!");
-        window.location.href = "/getIp";
+        navigate("/getIp");
       };
       
       
