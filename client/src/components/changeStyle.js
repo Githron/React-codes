@@ -8,6 +8,7 @@ function ChangeStyle() {
 
     const handleClick = () => {
         setBackgroundColor("lightblue");
+        console.log("clicked1")
     };
 
     const divStyle = {
